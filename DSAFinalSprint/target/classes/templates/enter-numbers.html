@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter Numbers</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: left;
+            align-items: left;
+        }
+
+        .container {
+            max-width: 600px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Binary Search</h1>
+    <br>
+    <h2>Please enter numbers below</h2>
+    <br>
+    <br>
+    <form action="/process-numbers" method="post">
+
+        <label for="numbers">Enter numbers (comma-separated):</label>
+        <input type="text" id="numbers" name="numbers" placeholder="e.g., 6,3,3,1,5,6,8" required>
+
+
+        <br>
+        <br>
+
+
+        <div class="buttons">
+            <button type="submit">Submit</button>
+            <button type="button" onclick="window.location.href='/previous-trees'">Show Previous</button>
+        </div>
+    </form>
+
+
+</div>
+</body>
+</html>

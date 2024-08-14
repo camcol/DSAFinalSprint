@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binary Search Tree Result</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: left;
+            align-items: left;
+        }
+
+        .container {
+            max-width: 600px;
+            width: 100%;
+        }
+        .tree-structure {
+            white-space: pre-wrap;
+        }
+
+    </style>
+</head>
+<body>
+
+
+<div class="container">
+
+    <h1>BST output in JSON format:</h1>
+    <br>
+    <br>
+    <div class="tree-structure" th:text="${treeStructure}"></div>
+    <a href="/enter-numbers" class="back-button">Back</a>
+
+</div>
+</body>
+</html>
